@@ -44,6 +44,9 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        //Open ID login
+        mavenRepo "http://mvnrepository.com/artifact/"
+        mavenRepo "http://repo.spring.io/milestone/"
     }
 
     dependencies {
@@ -71,6 +74,12 @@ grails.project.dependency.resolution = {
         compile ":sass-asset-pipeline:1.9.1"
         //CoffeScript
         compile ":coffee-asset-pipeline:1.9.0"
+        //Spring Security
+        compile ":spring-security-core:2.0-RC4"
+        //Open ID login
+        compile ":spring-security-openid:2.0-RC2"
+
+
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":less-asset-pipeline:1.7.0"
         //compile ":handlebars-asset-pipeline:1.3.0.3"
